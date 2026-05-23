@@ -1,52 +1,65 @@
-# carisurg-portfolio
+# CariSurg Clinical AI Portfolio
 
-Welcome to my carisurg-portfolio repository — a collection of projects, notebooks, and clinical AI exercises completed through the MedTech Pathways Programme.
+This repository documents my training work from the CariSurg MedTech Pathways Programme and my development as an aspiring AI engineer focused on healthcare technology.
 
-This portfolio documents my journey as a Clinical AI Engineer trainee, combining healthcare, artificial intelligence, data analysis, and software engineering to explore real-world clinical challenges through technology.
+The portfolio is organized by week. Each week has its own README, assignment files, notebooks, outputs, and supporting data where needed.
 
-🚀 About This Repository
+## Weekly Portfolio Index
 
-This repository serves as my public portfolio for clinical AI and healthcare technology work. It contains practical exercises, exploratory data analysis, machine learning experiments, healthcare data visualizations, and research-oriented projects focused on clinical environments and patient-centered systems.
+| Week | Focus | Folder |
+| --- | --- | --- |
+| Week 0 | Clinical data cleaning, visualization, vital-sign interpretation, and triage logic | `week-0/` |
+| Week 1 | Upcoming assignments | `week-1/` |
+| Week 2 | Upcoming assignments | `week-2/` |
+| Week 3 | Upcoming assignments | `week-3/` |
 
-The goal is to develop solutions that are not only technically strong, but also relevant to Caribbean healthcare realities.
+## Week 0 Completion Status
 
-🩺 Areas of Focus
-Clinical Data Analysis
-Artificial Intelligence & Machine Learning
-Healthcare Informatics
-Python Programming
-Data Visualization
-Risk Detection & Triage Logic
-Clinical Decision Support Concepts
-Human-Centered Healthcare Technology
-🛠 Technologies & Tools
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Google Colab
-Jupyter Notebooks
-Git & GitHub
-📂 Repository Contents
+| # | Assignment | Status |
+| --- | --- | --- |
+| 1 | Data Cleaning: Gender Column | Complete |
+| 2 | Data Cleaning: Assigned Column | Complete |
+| 3 | Data Visualization | Complete |
+| 4 | Vital Sign Description | Complete |
+| 5 | Unconsidered Metrics | Complete |
+| 6 | Triage Pseudocode | Complete |
+| 7 | Final Submission | Complete |
 
-This repository may include:
+Open `week-0/README.md` to view the full Week 0 submission map.
 
-Exploratory Data Analysis (EDA) notebooks
-Clinical dataset investigations
-Vital sign analysis projects
-Rule-based patient risk systems
-AI/ML healthcare experiments
-Research summaries and write-ups
-Portfolio and career development materials
-🌎 Mission
+## Portfolio Focus
 
-The Caribbean deserves healthcare technology built with regional realities in mind. Through this portfolio, I aim to contribute toward the future of Caribbean-centered clinical AI, healthcare innovation, and responsible technology development.
+- Clinical data cleaning and validation
+- Python data analysis with pandas and NumPy
+- Healthcare-focused exploratory data analysis
+- Clinical visualization with matplotlib
+- Vital-sign interpretation and risk-awareness
+- Reproducible notebook-based project work
+- Responsible AI thinking for Caribbean healthcare realities
 
-📈 Current Programme
+## How To Run The Notebooks
 
-Participant in the MedTech Pathways Programme.
+Install dependencies:
 
-🤝 Connect With Me
-LinkedIn: [Nehemiah Monrose LinkedIn page](www.linkedin.com/in/nehemiah-monrose-049467325)
-GitHub: [King Neyme's Github](https://github.com/KingNeyme)
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Then open the relevant notebook in Jupyter, VS Code, Google Colab, or Anaconda.
+
+For Week 0, open notebooks from:
+
+```text
+week-0/assignments/
+```
+
+If notebooks are already open in Anaconda/Jupyter from the old location, close and reopen them from `week-0/assignments/` before saving new work.
+
+## Mission
+
+I want to build AI systems that are technically strong, clinically aware, and useful in the Caribbean context. This portfolio is the beginning of that journey: learning how to handle real-world healthcare data carefully before building anything on top of it.
+
+## Connect
+
+- LinkedIn: [Nehemiah Monrose](https://www.linkedin.com/in/nehemiah-monrose-049467325)
+- GitHub: [KingNeyme](https://github.com/KingNeyme)
