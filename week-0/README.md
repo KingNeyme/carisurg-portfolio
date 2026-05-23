@@ -103,6 +103,13 @@ The written assignments explain the clinical meaning behind the code work:
 - Triage pseudocode for turning clinical reasoning into structured logic
 - Final reflection on what Week 0 taught me about clinical AI engineering
 
+Google Docs-ready versions are stored as `.docx` files in [`reports/`](reports/):
+
+- [`reports/Week 0 - Assignment 4 - Vital Sign Description.docx`](<reports/Week 0 - Assignment 4 - Vital Sign Description.docx>)
+- [`reports/Week 0 - Assignment 5 - Unconsidered Metrics.docx`](<reports/Week 0 - Assignment 5 - Unconsidered Metrics.docx>)
+- [`reports/Week 0 - Assignment 6 - Triage Pseudocode.docx`](<reports/Week 0 - Assignment 6 - Triage Pseudocode.docx>)
+- [`reports/Week 0 - Assignment 7 - Final Submission.docx`](<reports/Week 0 - Assignment 7 - Final Submission.docx>)
+
 ## Folder Guide
 
 | Folder | Purpose |
@@ -110,6 +117,7 @@ The written assignments explain the clinical meaning behind the code work:
 | `assignments/` | Completed notebooks and written reports |
 | `data/` | Week 0 training dataset and data notes |
 | `outputs/` | Plot images generated from the visualization notebook |
+| `reports/` | Google Docs-ready `.docx` versions of the written reports |
 
 ## Working In Anaconda/Jupyter
 

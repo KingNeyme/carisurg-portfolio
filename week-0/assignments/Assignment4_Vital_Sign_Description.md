@@ -10,7 +10,7 @@ Pulse is one of the fastest ways to understand how hard the body is working. A n
 
 In a triage setting, pulse helps clinicians decide how urgently a patient may need attention. A very fast pulse can suggest shock, sepsis, bleeding, fever, anxiety, or cardiac strain. A very slow pulse can also be dangerous, especially if the patient is dizzy, confused, weak, or has low blood pressure.
 
-## Why It Matters For Clinical AIy  h 
+## Why It Matters For Clinical AI
 Pulse should not be interpreted by itself. A pulse of 120 bpm may be less concerning in a nervous young adult with normal blood pressure than in an older patient with fever, low blood pressure, and confusion. For an AI system, pulse becomes more meaningful when combined with other measurements such as blood pressure, temperature, respiratory rate, oxygen needs, age, and Glasgow Coma Scale.
 
 ## Data Cleaning Considerations
