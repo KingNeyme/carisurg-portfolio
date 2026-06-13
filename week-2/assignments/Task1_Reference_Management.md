@@ -29,9 +29,9 @@ Suggested files:
 
 ## Completion Checklist
 
-- [ ] Zotero or Mendeley installed
-- [ ] 7+ references imported
-- [ ] Bibliography generated automatically
-- [ ] Week 1 proposal updated with generated citations
+- [x] Zotero or Mendeley installed
+- [x] 7+ references imported
+- [x] Bibliography generated automatically
+- [x] Week 1 proposal updated with generated citations
 - [ ] Zotero or Mendeley library shared with cohort
 - [ ] Updated proposal committed to repo

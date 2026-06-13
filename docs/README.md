@@ -16,8 +16,15 @@ Week 2 requires the Week 1 memo/proposal to be stored here after it is regenerat
 
 Recommended names:
 
-- `week-1-memo.md`
-- `week-1-proposal.md`
+- `week-1-preliminary-proposal.md`
 - `week-1-bibliography.md`
 
 Do not manually type citations into the final proposal. Use Zotero or Mendeley to generate the bibliography, then add the exported version here.
+
+## Current Files
+
+| File | Status |
+| --- | --- |
+| `week-1-preliminary-proposal.md` | Repo copy of the Week 1 proposal, updated with 7-paper Zotero bibliography. |
+| `week-1-bibliography.md` | Zotero-generated Vancouver bibliography for the Week 1 proposal. |
+| `week-1-zotero-import.ris` | Import file for Zotero containing the 5 Week 1 proposal references plus 2 additional Week 2 references. Verify metadata in Zotero before exporting the final bibliography. |
