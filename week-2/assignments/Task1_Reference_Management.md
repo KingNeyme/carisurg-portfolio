@@ -27,11 +27,17 @@ Suggested files:
 - `docs/week-1-proposal.md`
 - `docs/week-1-bibliography.md`
 
+## Shared Zotero Library
+
+Zotero group library:
+
+https://www.zotero.org/groups/6586262/carisurg_week_2_references_-_nehemiah_monrose
+
 ## Completion Checklist
 
 - [x] Zotero or Mendeley installed
 - [x] 7+ references imported
 - [x] Bibliography generated automatically
 - [x] Week 1 proposal updated with generated citations
-- [ ] Zotero or Mendeley library shared with cohort
+- [x] Zotero or Mendeley library shared with cohort
 - [x] Updated proposal committed to repo
