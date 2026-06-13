@@ -36,6 +36,22 @@ Some medications affect pulse and blood pressure. For example, beta blockers may
 
 Triage decisions often depend on how symptoms are changing. A blood pressure that is dropping over time may be more concerning than one isolated reading.
 
+### Arrival Method and Acuity Context
+
+How the patient arrived can add important context. A patient brought by ambulance, transferred from another facility, or sent directly from a clinic may have a different risk profile than a walk-in patient. Arrival method does not decide urgency by itself, but it can help explain why the patient is presenting and how much concern existed before triage.
+
+### Symptom Duration and Progression
+
+It matters whether symptoms started suddenly or have been worsening over several days. Sudden weakness, sudden chest pain, sudden shortness of breath, or a rapidly worsening fever can change triage priority even if the first set of vital signs looks stable.
+
+### Pregnancy Status
+
+Pregnancy can change how clinicians interpret symptoms, vital signs, medication options, and risk. For example, abdominal pain, bleeding, high blood pressure, or severe headache may be more concerning in a pregnant patient.
+
+### Infection or Sepsis Indicators
+
+Temperature, pulse, and respiratory rate can suggest infection risk, but they are not enough alone. Additional information such as suspected infection source, chills, altered mental status, blood pressure trend, lactate, or clinician concern would help identify possible sepsis earlier.
+
 ## Reflection
 
 This exercise shows why clinical AI systems need more than raw numbers. Vital signs are important, but they become safer and more useful when combined with clinical context, patient history, symptoms, and time trends.
