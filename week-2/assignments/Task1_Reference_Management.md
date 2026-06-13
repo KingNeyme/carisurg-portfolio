@@ -34,4 +34,4 @@ Suggested files:
 - [x] Bibliography generated automatically
 - [x] Week 1 proposal updated with generated citations
 - [ ] Zotero or Mendeley library shared with cohort
-- [ ] Updated proposal committed to repo
+- [x] Updated proposal committed to repo
