@@ -34,6 +34,18 @@ This paper is directly relevant to the Caribbean clinical context of the propose
 
 This study developed benchmark emergency department triage prediction models using large public electronic health records. It is useful because it shows how structured emergency department data can support reproducible model development and comparison across outcomes such as hospitalisation and critical events. The paper also helps address the proposal's need for a practical modelling direction by showing how public or de-identified emergency department datasets can be used for benchmarking before any real-world deployment.
 
+### Paper 8: Kelly et al. (2019) — Key Challenges for Delivering Clinical Impact with Artificial Intelligence
+
+Kelly and colleagues explain why strong model performance is not enough to produce clinical impact. They identify challenges involving data quality, generalisability, regulation, workflow integration, and evaluation in real clinical settings. This paper supports the proposal's focus on a lightweight decision-support tool that must be tested for usability and workflow fit rather than judged only by predictive accuracy.
+
+### Paper 9: Greenhalgh et al. (2017) — The NASSS Framework for Health Technology Adoption
+
+The NASSS framework examines nonadoption, abandonment, scale-up, spread, and sustainability of health technologies. It shows that adoption depends on the clinical condition, the technology, the value proposition, the people using it, the organisation, and the wider system. This framework strengthens the systems-thinking section by showing why an AI tool must fit existing roles, resources, workflows, and organisational capacity.
+
+### Paper 10: Shortliffe and Sepulveda (2018) — Clinical Decision Support in the Era of Artificial Intelligence
+
+This paper discusses how artificial intelligence changes clinical decision support while reinforcing the need for trustworthy integration into care. It is relevant to the proposed system because the model is intended to support, not replace, triage judgement. The paper helps justify requirements for explanation, clinician override, and careful evaluation of how recommendations are presented.
+
 ## 2. Gap Analysis
 
 ### Gap 1: Limited Real-World Validation
@@ -54,6 +66,46 @@ Emergency departments experience increasing pressure from overcrowding, inconsis
 
 The proposed pilot will investigate a lightweight AI-assisted triage decision-support system using structured patient intake information including demographics, vital signs, presenting complaint, and triage variables. The model would predict patient urgency or risk level and provide decision-support recommendations to assist healthcare professionals during triage rather than replacing human judgement.
 
+## 4. Workflow and Systems Thinking
+
+### Current ED Triage Workflow
+
+The first-pass workflow follows the patient from arrival through registration, vital-sign capture, triage nurse assessment, priority assignment, waiting/reassessment, clinician assessment, treatment, and disposition.
+
+![Mercer ED triage workflow](../week-3/diagrams/mercer-ed-triage-workflow.svg)
+
+The diagram identifies five possible AI plug-in points:
+
+1. Detect possible duplicate records and missing registration fields.
+2. Check vital-sign completeness, timestamps, and physiologic plausibility.
+3. Provide an explainable urgency/risk estimate during nurse assessment.
+4. Flag patients due for reassessment or at risk of deterioration while waiting.
+5. Estimate admission or resource demand to support flow planning.
+
+The AI functions remain advisory. They do not independently assign triage level, route a patient, or make admission/discharge decisions.
+
+### Constraints and Stakeholders
+
+#### Constraint 1: Limited Nurse Time
+
+Triage work is interruption-driven. Any AI tool must use information already captured, respond quickly, and avoid adding duplicate documentation.
+
+#### Constraint 2: Missing or Delayed Data
+
+The model must show when vital signs are missing, stale, or implausible. It should not provide a confident score when critical inputs are unavailable.
+
+#### Constraint 3: Capacity and Queue Limits
+
+An urgency prediction cannot create staff, beds, diagnostics, or transport. The tool must support clinical prioritisation without presenting capacity problems as modelling failures.
+
+| Stakeholder | Primary concern |
+| --- | --- |
+| Triage nurse | Fast, explainable support that is easy to override |
+| ED consultant/physician | Clinically credible recommendations with visible missing data |
+| Registration/admin staff | Accurate patient identity without delaying urgent care |
+| Porter/bed-flow coordinator | Routing recommendations that reflect real destination capacity |
+| Patient advocate/patient representative | Fairness, dignity, accessibility, privacy, and protection from bias |
+
 ### Summary of Previous Work
 
 Previous research demonstrates growing interest in AI-assisted emergency department triage. Studies consistently show that machine learning approaches may improve prioritisation accuracy, operational efficiency, and risk prediction. However, existing literature also demonstrates challenges relating to validation, explainability, bias, and workflow integration. These findings suggest opportunities for investigating practical decision-support systems that remain clinically usable.
@@ -67,3 +119,5 @@ Previous research demonstrates growing interest in AI-assisted emergency departm
 5. De Freitas L, Goodacre S, O'Hara R, Thokala P, Hariharan S. Qualitative exploration of patient flow in a Caribbean emergency department. BMJ Open. 2020;10(12):e041422. doi:10.1136/bmjopen-2020-041422
 6. Araouchi Z, Adda M. TriageIntelli: AI-Assisted Multimodal Triage System for Health Centers. 2024.
 7. Tyler S. Use of Artificial Intelligence in Triage in Hospital Emergency Departments: A Scoping Review. 2024.
+
+> Week 3 action needed: import the three references in `week-3/assignments/week-3-zotero-import.ris`, then regenerate this bibliography from Zotero so the final reference list contains 10 items.

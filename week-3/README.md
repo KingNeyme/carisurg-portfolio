@@ -1,40 +1,51 @@
-# Week 3
+# Week 3: Healthcare Workflows and Systems Thinking
 
-This folder is reserved for Week 3 CariSurg assignments.
+Week 3 focuses on designing clinical AI around the realities of healthcare work. A model can perform well in a notebook and still fail if it interrupts nurses, depends on delayed information, or ignores the capacity constraints of the emergency department.
 
-Once Week 3 work is added, this README should provide a polished guide to that week's submissions and the skills demonstrated.
+## Week Theme
 
-## Week Overview
+**Design with clinical staff, not at them.**
 
-| Item | Details |
-| --- | --- |
-| Theme | To be added |
-| Main tools | To be added |
-| Main dataset/project | To be added |
-| Status | Pending |
+## Objectives
+
+- Map the current emergency department triage workflow.
+- Identify decision points, delays, handoffs, and information loss.
+- Annotate three to five plausible AI plug-in points.
+- Name three workflow constraints that the AI design must respect.
+- Identify five clinical stakeholders and their main concerns.
+- Expand the proposal literature base to at least 10 papers.
+- Add systems-thinking content to the preliminary proposal.
 
 ## Assignment Map
 
-| # | Assignment | Status | Submission File |
-| --- | --- | --- | --- |
-| 1 | To be added | Pending | `assignments/` |
+| Task | Status | Evidence |
+| --- | --- | --- |
+| Structured workflow notes | Draft complete; validate against video/shadowing | [`assignments/Task1_Workflow_Study_Notes.md`](assignments/Task1_Workflow_Study_Notes.md) |
+| Workflow diagram | Source and exports complete | [`Mermaid source`](diagrams/mercer-ed-triage-workflow.mmd), [`SVG`](diagrams/mercer-ed-triage-workflow.svg), [`PNG`](diagrams/mercer-ed-triage-workflow.png) |
+| Constraints and stakeholders | Complete draft | [`assignments/Task3_Constraints_and_Stakeholders.md`](assignments/Task3_Constraints_and_Stakeholders.md) |
+| Proposal refinement | Draft added to proposal | [`../docs/week-1-preliminary-proposal.md`](../docs/week-1-preliminary-proposal.md) |
+| Literature expansion | Three candidate references prepared for Zotero | [`assignments/week-3-zotero-import.ris`](assignments/week-3-zotero-import.ris) |
+| Career challenge | Draft complete | [`assignments/Anti_Procrastination_Protocol.md`](assignments/Anti_Procrastination_Protocol.md) |
 
-## Skills To Highlight
+## Interim Submission
 
-Update this section with the most important Week 3 skills, such as:
+- Draft workflow notes
+- Initial workflow diagram
+- Shortlist of three workflow constraints
 
-- analysis methods
-- AI engineering concepts
-- evaluation metrics
-- clinical interpretation
-- communication or presentation outputs
+![Mercer ED triage workflow](diagrams/mercer-ed-triage-workflow.png)
 
-## Folder Guide
+## Final Submission
 
-| Folder | Purpose |
-| --- | --- |
-| `assignments/` | Week 3 assignment files |
+- Refined proposal
+- Literature review with 10+ papers
+- Workflow diagram
+- Constraints and stakeholders section
+
+## Important Validation Note
+
+The workflow is a first-pass model based on the Week 3 scenario and common emergency department processes. It must be checked against the assigned walk-through video or real shadowing notes. Any difference observed in the actual Mercer scenario should replace the assumptions in this draft.
 
 ## Reflection
 
-Add a short reflection after completing Week 3. Focus on what changed in your understanding and what this week adds to the overall portfolio.
+Week 3 shifts the project from asking whether a model can make a prediction to asking whether the prediction can fit safely into real work. Clinical value depends on timing, usability, information quality, staffing, handoffs, and the ability of clinicians to understand and override the tool.

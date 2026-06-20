@@ -1,0 +1,39 @@
+flowchart TD
+    A[Patient arrives<br/>walk-in, ambulance, referral] --> B{Immediate life threat?}
+    B -- Yes --> C[Resuscitation / immediate clinical care]
+    B -- No --> D[Registration and patient identification]
+    D --> E[Vital signs and initial observations]
+    E --> F[Triage nurse assessment<br/>complaint, history, pain, mental status]
+    F --> G{Assign acuity / triage priority}
+    G -- Critical --> C
+    G -- Urgent --> H[Urgent treatment queue]
+    G -- Standard --> I[Standard waiting queue]
+    G -- Minor / fast-track --> J[Fast-track pathway]
+    H --> K[Clinician assessment]
+    I --> L{Reassessment due or deterioration?}
+    L -- Yes --> F
+    L -- No --> K
+    J --> K
+    C --> K
+    K --> M[Tests, treatment, imaging, specialist review]
+    M --> N{Disposition decision}
+    N --> O[Discharge]
+    N --> P[Observation]
+    N --> Q[Admission]
+    N --> R[Transfer / referral]
+
+    AI1([AI 1: duplicate and missing-data check]) -. supports .-> D
+    AI2([AI 2: vital-sign quality and plausibility check]) -. supports .-> E
+    AI3([AI 3: explainable urgency / risk estimate]) -. supports .-> G
+    AI4([AI 4: reassessment and deterioration alert]) -. supports .-> L
+    AI5([AI 5: admission / resource-demand prediction]) -. supports .-> N
+
+    classDef clinical fill:#e9f4ef,stroke:#26735b,color:#102820,stroke-width:1.5px;
+    classDef decision fill:#fff4d6,stroke:#9a6b00,color:#3d2b00,stroke-width:1.5px;
+    classDef outcome fill:#edf2fa,stroke:#365d8d,color:#142538,stroke-width:1.5px;
+    classDef ai fill:#f7e9e7,stroke:#a04438,color:#381713,stroke-width:1.5px;
+
+    class A,C,D,E,F,H,I,J,K,M clinical;
+    class B,G,L,N decision;
+    class O,P,Q,R outcome;
+    class AI1,AI2,AI3,AI4,AI5 ai;

@@ -35,7 +35,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | Week 0 | Clinical data cleaning, visualisation, vital-sign interpretation, and triage logic | Complete |
 | Week 1 | Memo/proposal and literature work | Pending files |
 | Week 2 | Repository setup, documentation, reference management, PR workflow, LinkedIn challenge | In progress |
-| Week 3 | Upcoming assignments | Pending |
+| Week 3 | Healthcare workflows, systems thinking, constraints, stakeholders, and proposal refinement | In progress |
 
 ## Week 0 Completion Status
 
