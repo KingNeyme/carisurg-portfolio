@@ -24,7 +24,7 @@ Week 3 focuses on designing clinical AI around the realities of healthcare work.
 | Workflow diagram | Source and exports complete | [`Mermaid source`](diagrams/mercer-ed-triage-workflow.mmd), [`SVG`](diagrams/mercer-ed-triage-workflow.svg), [`PNG`](diagrams/mercer-ed-triage-workflow.png) |
 | Constraints and stakeholders | Complete draft | [`assignments/Task3_Constraints_and_Stakeholders.md`](assignments/Task3_Constraints_and_Stakeholders.md) |
 | Proposal refinement | Draft added to proposal | [`../docs/week-1-preliminary-proposal.md`](../docs/week-1-preliminary-proposal.md) |
-| Literature expansion | Three candidate references prepared for Zotero | [`assignments/week-3-zotero-import.ris`](assignments/week-3-zotero-import.ris) |
+| Literature expansion | Complete: 10-paper Zotero bibliography | [`../docs/week-1-bibliography.md`](../docs/week-1-bibliography.md) |
 | Career challenge | Draft complete | [`assignments/Anti_Procrastination_Protocol.md`](assignments/Anti_Procrastination_Protocol.md) |
 
 ## Interim Submission
