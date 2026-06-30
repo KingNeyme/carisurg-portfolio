@@ -22,6 +22,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | `week-1/` | Week 1 assignment space for memo/proposal work |
 | `week-2/` | Week 2 project setup, documentation, reference management, Git/GitHub workflow, LinkedIn challenge |
 | `week-3/` | Week 3 assignment space |
+| `week-4/` | Week 4 ethics, safety, risk, equity, and professional engagement assignments |
 | `notebooks/` | Class-required notebook entry point with links to notebook work |
 | `docs/` | Class-required documentation entry point for Week 1 memo/proposal and bibliography |
 | `data/` | Class-required data entry point with dataset notes |
@@ -33,9 +34,10 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | Week | Focus | Status |
 | --- | --- | --- |
 | Week 0 | Clinical data cleaning, visualisation, vital-sign interpretation, and triage logic | Complete |
-| Week 1 | Memo/proposal and literature work | Pending files |
-| Week 2 | Repository setup, documentation, reference management, PR workflow, LinkedIn challenge | In progress |
-| Week 3 | Healthcare workflows, systems thinking, constraints, stakeholders, and proposal refinement | In progress |
+| Week 1 | Memo/proposal and literature work | Complete working proposal |
+| Week 2 | Repository setup, documentation, reference management, PR workflow, LinkedIn challenge | Complete |
+| Week 3 | Healthcare workflows, systems thinking, constraints, stakeholders, and proposal refinement | Complete |
+| Week 4 | Ethics, safety, risk awareness, equity, harm analysis, and proposal refinement | Complete; publication steps prepared |
 
 ## Week 0 Completion Status
 
@@ -50,6 +52,8 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | 7 | Final Submission | Complete |
 
 Open [`week-0/README.md`](week-0/README.md) to view the full Week 0 submission map.
+
+For the current ethics and safety work, open [`week-4/README.md`](week-4/README.md).
 
 ## How To Run The Notebooks
 

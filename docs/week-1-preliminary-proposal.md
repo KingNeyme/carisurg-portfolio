@@ -2,7 +2,7 @@
 
 > Source: Google Drive file `Preliminary Proposal.pdf`
 >
-> This working proposal began in Week 1 and was refined in Weeks 2 and 3. Its bibliography was generated from Zotero in Vancouver style and now contains 10 references.
+> This working proposal began in Week 1 and was refined through Week 4. It now combines the literature review, proposed solution, workflow analysis, stakeholder constraints, and a measurable safety and equity risk analysis. The bibliography contains 15 references.
 
 ## 1. Literature Review
 
@@ -46,6 +46,26 @@ The NASSS framework examines nonadoption, abandonment, scale-up, spread, and sus
 
 This paper discusses how artificial intelligence changes clinical decision support while reinforcing the need for trustworthy integration into care. It is relevant to the proposed system because the model is intended to support, not replace, triage judgement. The paper helps justify requirements for explanation, clinician override, and careful evaluation of how recommendations are presented.
 
+### Paper 11: Obermeyer et al. (2019) — Racial Bias in a Population Health Algorithm
+
+Obermeyer and colleagues showed that a widely used population health algorithm produced substantial racial bias because it predicted healthcare cost rather than illness. At the same score, Black patients were sicker than White patients, yet were less likely to receive additional care-management support. This case demonstrates why a convenient proxy can reproduce structural inequity even when the model performs well against its selected target. It directly informs the proposed system's requirement to define urgency using clinical need and to audit false negatives and outcomes by subgroup.
+
+### Paper 12: World Health Organization (2021) — Ethics and Governance of Artificial Intelligence for Health
+
+The WHO guidance places ethics and human rights at the centre of health AI design, deployment, and governance. Its principles cover autonomy, safety and public benefit, transparency, accountability, inclusiveness and equity, and responsive sustainability. This source provides the ethical framework for keeping the triage model advisory, informing patients appropriately, assigning clear accountability, and monitoring whether benefits and harms are distributed fairly.
+
+### Paper 13: Wiens et al. (2019) — Do No Harm: A Roadmap for Responsible Machine Learning for Health Care
+
+Wiens and colleagues argue that translation from model development to patient care requires engaged stakeholders and a systematic process from problem formulation through deployment. The paper supports staged validation, clinician involvement, prospective testing, and post-deployment monitoring. These recommendations strengthen the proposal's plan to start in retrospective and shadow modes before allowing the model to influence workflow.
+
+### Paper 14: Amann et al. (2020) — Explainability for Artificial Intelligence in Healthcare
+
+This multidisciplinary analysis examines explainability from technical, medical, legal, and ethical perspectives. It emphasises that explanations can help clinicians evaluate recommendations and investigate disagreement with a system. For the proposed tool, this means presenting a concise reason for an urgency estimate, showing missing inputs and uncertainty, and testing whether clinicians interpret the explanation correctly rather than assuming that any explanation creates trust.
+
+### Paper 15: Vokinger et al. (2021) — Mitigating Bias in Machine Learning for Medicine
+
+Vokinger and colleagues describe how bias can enter during data collection, preparation, model development, evaluation, and deployment. They recommend mitigation across the full lifecycle rather than relying on a single fairness metric. This supports representative data review, independent subgroup evaluation, site-specific validation, and monitoring after deployment.
+
 ## 2. Gap Analysis
 
 ### Gap 1: Limited Real-World Validation
@@ -55,6 +75,10 @@ Many AI-assisted triage studies demonstrate promising results using retrospectiv
 ### Gap 2: Limited Explainability and Clinical Integration
 
 Most studies primarily focus on predictive accuracy and performance metrics rather than clinician usability. Emergency healthcare professionals require systems that are understandable, explainable, and compatible with existing workflows. Limited attention has been given to designing systems that clinicians can realistically trust and adopt.
+
+### Gap 3: Limited Equity and Post-Deployment Evidence
+
+Published performance can conceal clinically important differences between patient groups and hospitals. Few studies show how triage tools will be monitored for subgroup false negatives, distribution shift, automation bias, or inequitable resource allocation after deployment. This proposal therefore treats subgroup evaluation and post-deployment monitoring as core safety requirements rather than optional future work.
 
 ## 3. Preliminary Proposal
 
@@ -110,6 +134,41 @@ An urgency prediction cannot create staff, beds, diagnostics, or transport. The 
 
 Previous research demonstrates growing interest in AI-assisted emergency department triage. Studies consistently show that machine learning approaches may improve prioritisation accuracy, operational efficiency, and risk prediction. However, existing literature also demonstrates challenges relating to validation, explainability, bias, and workflow integration. These findings suggest opportunities for investigating practical decision-support systems that remain clinically usable.
 
+## 5. Risk Analysis
+
+The proposed system is a high-stakes decision-support tool. Its risks therefore include more than prediction error. Harm could arise from unrepresentative data, a change in the patient population, missing inputs, poor workflow integration, over-trust in the recommendation, privacy failures, or an unequal effect on patients with limited access to care.
+
+### Risk Register
+
+| # | Risk | Category | L | I | Primary Mitigation | Signal of Success |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Under-represented patient groups | Technical / Equity | H | H | Subgroup coverage and performance testing; no deployment where evidence is inadequate | No clinically important gap in sensitivity or false negatives |
+| 2 | Distribution shift | Technical | H | H | Site and time validation, drift monitoring, rollback | Calibration and safety metrics remain inside limits by site |
+| 3 | Missing, stale, or incorrect inputs | Technical / Operational | H | H | Unit, timestamp, completeness, and plausibility checks | Fewer invalid records reach scoring; unsafe scores are withheld |
+| 4 | False reassurance from miscalibration | Technical | M | H | Calibrated probabilities, visible uncertainty, critical false-negative audit | Calibration and false-negative rates meet safety thresholds |
+| 5 | Misleading explanation | Technical / Ethical | M | H | Input-grounded explanations and clinician comprehension testing | No invented facts; limitations are interpreted correctly |
+| 6 | Alert fatigue | Operational | H | H | Actionable alerts, duplicate suppression, nurse-led threshold review | Useful-alert rate improves and ignored alerts decline |
+| 7 | Poor workflow or EHR integration | Operational | M | H | Co-design, shadow mode, added-time measurement, downtime plan | Triage time does not materially increase; uptime meets target |
+| 8 | Automation bias | Ethical / Operational | H | H | Independent assessment, simple override, training, disagreement audit | Appropriate overrides occur and high-risk disagreements are reviewed |
+| 9 | Inadequate patient notice | Ethical | M | M | Plain-language notice, accountability, and complaint route | Patient understanding and complaint-resolution targets are met |
+| 10 | Privacy or security breach | Ethical / Operational | M | H | Data minimisation, access control, encryption, logs, response plan | No unauthorised access; reviews and drills close actions on time |
+| 11 | Access-related exclusion | Equity | H | H | Accessible and translated workflows; no penalty for sparse records | No material disadvantage in completion or escalation rates |
+| 12 | Harmful resource-allocation feedback loop | Equity / Ethical | M | H | Predict clinical need, audit decisions and outcomes, stop on disparity | Referral and enrolment align with clinical need across groups |
+
+The detailed register, ownership model, review frequency, and stop rule are maintained in [`risk-register.md`](risk-register.md).
+
+### Risk Memo: Top Three
+
+**Under-represented patient groups.** A model can look accurate overall while missing high-risk patients from groups that appeared rarely in the training data. Before any deployment, performance must be reported separately for clinically important groups, and the tool must not be used where evidence is inadequate.
+
+**Distribution shift.** A model trained at one hospital may not transfer safely to another hospital with different patients, equipment, documentation, or workflow. Every site requires local validation, a silent-mode pilot, drift monitoring, and a tested rollback process.
+
+**Automation bias.** A human in the loop does not guarantee real oversight. Busy clinicians may accept a confident recommendation unless the workflow supports independent assessment, makes uncertainty visible, and protects appropriate override. Disagreement cases should be reviewed as learning and safety evidence.
+
+### Safety Position and Deployment Gate
+
+The system should begin with retrospective evaluation, then progress to silent or shadow-mode testing in which recommendations cannot alter patient care. A clinical governance group should approve intended use, subgroup requirements, thresholds, downtime procedures, and stop criteria before any live pilot. Deployment should pause when a safety threshold is breached, drift invalidates performance, or a material disparity cannot be explained and corrected.
+
 ## References
 
 1. Da'Costa A. AI-Driven Triage in Emergency Departments: A Review of Benefits, Challenges, and Future Directions. 2025.
@@ -122,3 +181,8 @@ Previous research demonstrates growing interest in AI-assisted emergency departm
 8. De Freitas L, Goodacre S, O'Hara R, Thokala P, Hariharan S. Qualitative exploration of patient flow in a Caribbean emergency department. BMJ Open. 2020;10(12):e041422. doi:10.1136/bmjopen-2020-041422
 9. Araouchi Z, Adda M. TriageIntelli: AI-Assisted Multimodal Triage System for Health Centers. 2024.
 10. Tyler S. Use of Artificial Intelligence in Triage in Hospital Emergency Departments: A Scoping Review. 2024.
+11. Obermeyer Z, Powers B, Vogeli C, Mullainathan S. Dissecting racial bias in an algorithm used to manage the health of populations. Science. 2019;366(6464):447-453. doi:10.1126/science.aax2342
+12. World Health Organization. Ethics and governance of artificial intelligence for health. Geneva: World Health Organization; 2021. ISBN: 9789240029200.
+13. Wiens J, Saria S, Sendak M, Ghassemi M, Liu VX, Doshi-Velez F, et al. Do no harm: a roadmap for responsible machine learning for health care. Nature Medicine. 2019;25:1337-1340. doi:10.1038/s41591-019-0548-6
+14. Amann J, Blasimme A, Vayena E, Frey D, Madai VI. Explainability for artificial intelligence in healthcare: a multidisciplinary perspective. BMC Medical Informatics and Decision Making. 2020;20:310. doi:10.1186/s12911-020-01332-6
+15. Vokinger KN, Feuerriegel S, Kesselheim AS. Mitigating bias in machine learning for medicine. Communications Medicine. 2021;1:25. doi:10.1038/s43856-021-00028-w

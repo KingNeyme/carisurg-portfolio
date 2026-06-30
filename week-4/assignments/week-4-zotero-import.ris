@@ -1,0 +1,77 @@
+TY  - JOUR
+AU  - Obermeyer, Ziad
+AU  - Powers, Brian
+AU  - Vogeli, Christine
+AU  - Mullainathan, Sendhil
+TI  - Dissecting racial bias in an algorithm used to manage the health of populations
+JO  - Science
+PY  - 2019
+VL  - 366
+IS  - 6464
+SP  - 447
+EP  - 453
+DO  - 10.1126/science.aax2342
+UR  - https://doi.org/10.1126/science.aax2342
+ER  -
+
+TY  - RPRT
+AU  - World Health Organization
+TI  - Ethics and governance of artificial intelligence for health
+PY  - 2021
+PB  - World Health Organization
+CY  - Geneva
+SN  - 9789240029200
+UR  - https://www.who.int/publications/i/item/9789240029200
+ER  -
+
+TY  - JOUR
+AU  - Wiens, Jenna
+AU  - Saria, Suchi
+AU  - Sendak, Mark
+AU  - Ghassemi, Marzyeh
+AU  - Liu, Vincent X.
+AU  - Doshi-Velez, Finale
+AU  - Jung, Kenneth
+AU  - Heller, Katherine
+AU  - Kale, David
+AU  - Saeed, Mohammed
+AU  - Ossorio, Pilar N.
+AU  - Thadaney-Israni, Sonoo
+AU  - Goldenberg, Anna
+TI  - Do no harm: a roadmap for responsible machine learning for health care
+JO  - Nature Medicine
+PY  - 2019
+VL  - 25
+SP  - 1337
+EP  - 1340
+DO  - 10.1038/s41591-019-0548-6
+UR  - https://doi.org/10.1038/s41591-019-0548-6
+ER  -
+
+TY  - JOUR
+AU  - Amann, Julia
+AU  - Blasimme, Alessandro
+AU  - Vayena, Effy
+AU  - Frey, Dietmar
+AU  - Madai, Vince I.
+TI  - Explainability for artificial intelligence in healthcare: a multidisciplinary perspective
+JO  - BMC Medical Informatics and Decision Making
+PY  - 2020
+VL  - 20
+SP  - 310
+DO  - 10.1186/s12911-020-01332-6
+UR  - https://doi.org/10.1186/s12911-020-01332-6
+ER  -
+
+TY  - JOUR
+AU  - Vokinger, Kerstin N.
+AU  - Feuerriegel, Stefan
+AU  - Kesselheim, Aaron S.
+TI  - Mitigating bias in machine learning for medicine
+JO  - Communications Medicine
+PY  - 2021
+VL  - 1
+SP  - 25
+DO  - 10.1038/s43856-021-00028-w
+UR  - https://doi.org/10.1038/s43856-021-00028-w
+ER  -

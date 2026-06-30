@@ -2,7 +2,7 @@
 
 This folder is the class-required documentation entry point.
 
-Use it for Week 1 and future written work such as:
+Use it for project-level written work such as:
 
 - clinical memos
 - proposals
@@ -10,21 +10,12 @@ Use it for Week 1 and future written work such as:
 - auto-generated bibliographies
 - exported Google Docs or PDF submissions, if the programme asks for files in the repo
 
-## Week 1 Documents Needed
-
-Week 2 requires the Week 1 memo/proposal to be stored here after it is regenerated with auto-generated citations from Zotero or Mendeley.
-
-Recommended names:
-
-- `week-1-preliminary-proposal.md`
-- `week-1-bibliography.md`
-
-Do not manually type citations into the final proposal. Use Zotero or Mendeley to generate the bibliography, then add the exported version here.
-
 ## Current Files
 
 | File | Status |
 | --- | --- |
-| `week-1-preliminary-proposal.md` | Working proposal, expanded in Week 3 with workflow, constraints, stakeholders, and a 10-paper Zotero bibliography. |
-| `week-1-bibliography.md` | Zotero-generated Vancouver bibliography containing 10 references. |
+| `week-1-preliminary-proposal.md` | Working proposal refined through Week 4 with literature, workflow, constraints, stakeholders, and risk analysis. |
+| `week-1-bibliography.md` | Vancouver-style working bibliography containing 15 references. |
 | `week-1-zotero-import.ris` | Import file for Zotero containing the 5 Week 1 proposal references plus 2 additional Week 2 references. Verify metadata in Zotero before exporting the final bibliography. |
+| `risk-register.md` | Week 4 register of 12 technical, operational, ethical, and equity risks with measurable safeguards. |
+| `week-4-ai-harm-case-study.md` | Root-cause analysis of a documented population-health algorithm bias case. |
