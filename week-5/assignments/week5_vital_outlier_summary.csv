@@ -1,0 +1,7 @@
+feature,plausible_low,plausible_high,observed_min,observed_max,missing_pct,outside_plausible_count,outside_plausible_pct
+triage_vital_hr,25,250,30.0,280.0,29.626431347080928,1,0.00017841658846072872
+triage_vital_sbp,50,260,45.0,312.0,29.956858868910196,10,0.0017841658846072873
+triage_vital_dbp,20,160,25.0,214.0,29.985227106475453,49,0.008742412834575707
+triage_vital_rr,5,80,8.0,69.0,30.417708916904257,0,0.0
+triage_vital_o2,50,100,60.0,99.0,48.40745353139953,0,0.0
+triage_vital_temp,85,110,90.0,106.0,32.64755943948644,0,0.0

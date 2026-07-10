@@ -1,0 +1,45 @@
+{
+  "rows": 560486,
+  "columns": 972,
+  "target": "esi",
+  "raw_path": "/Users/kingneyme/Desktop/carisurg-portfolio/data/raw/full_data.parquet",
+  "processed_path": "/Users/kingneyme/Desktop/carisurg-portfolio/data/processed/week5_triage_cleaned.parquet",
+  "overall_missing_pct": 29.713164753592956,
+  "columns_over_50_pct_missing": 354,
+  "columns_over_90_pct_missing": 120,
+  "chief_complaint_columns": 200,
+  "numeric_columns": 956,
+  "categorical_columns": 16,
+  "top_missing": {
+    "phencyclidine(pcp)screen,urine,noconf._median": 100.0,
+    "phencyclidine(pcp)screen,urine,noconf._last": 100.0,
+    "phencyclidine(pcp)screen,urine,noconf._max": 100.0,
+    "phencyclidine(pcp)screen,urine,noconf._min": 100.0,
+    "benzodiazepinesscreen,urine,noconf._last": 100.0,
+    "epithelialcells_last": 100.0,
+    "benzodiazepinesscreen,urine,noconf._median": 100.0,
+    "benzodiazepinesscreen,urine,noconf._min": 100.0,
+    "benzodiazepinesscreen,urine,noconf._max": 100.0,
+    "epithelialcells_min": 99.99
+  },
+  "esi_distribution_pct": {
+    "1.0": 0.94,
+    "2.0": 29.18,
+    "3.0": 42.15,
+    "4.0": 22.3,
+    "5.0": 4.99,
+    "nan": 0.44
+  },
+  "top_chief_complaints_pct": {
+    "cc_abdominalpain": 9.74,
+    "cc_other": 9.15,
+    "cc_chestpain": 6.42,
+    "cc_shortnessofbreath": 4.42,
+    "cc_backpain": 3.7,
+    "cc_fall": 3.41,
+    "cc_alcoholintoxication": 2.86,
+    "cc_motorvehiclecrash": 2.67,
+    "cc_dizziness": 2.29,
+    "cc_cough": 2.25
+  }
+}

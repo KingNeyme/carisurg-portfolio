@@ -23,6 +23,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | `week-2/` | Week 2 project setup, documentation, reference management, Git/GitHub workflow, LinkedIn challenge |
 | `week-3/` | Week 3 assignment space |
 | `week-4/` | Week 4 ethics, safety, risk, equity, and professional engagement assignments |
+| `week-5/` | Week 5 ED triage data exploration, feasibility memo, dashboard outputs, and career roadmap |
 | `notebooks/` | Class-required notebook entry point with links to notebook work |
 | `docs/` | Class-required documentation entry point for Week 1 memo/proposal and bibliography |
 | `data/` | Class-required data entry point with dataset notes |
@@ -38,6 +39,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | Week 2 | Repository setup, documentation, reference management, PR workflow, LinkedIn challenge | Complete |
 | Week 3 | Healthcare workflows, systems thinking, constraints, stakeholders, and proposal refinement | Complete |
 | Week 4 | Ethics, safety, risk awareness, equity, harm analysis, and proposal refinement | Complete; publication steps prepared |
+| Week 5 | AI-assisted triage data exploration, profiling, dashboard, feasibility memo, and feature shortlist | Complete |
 
 ## Week 0 Completion Status
 
@@ -53,7 +55,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 
 Open [`week-0/README.md`](week-0/README.md) to view the full Week 0 submission map.
 
-For the current ethics and safety work, open [`week-4/README.md`](week-4/README.md).
+For the current ED triage data exploration work, open [`week-5/README.md`](week-5/README.md).
 
 ## How To Run The Notebooks
 
@@ -71,9 +73,17 @@ For Week 0, open notebooks from:
 week-0/assignments/
 ```
 
+For Week 5, open:
+
+```text
+notebooks/Week5_AI_Assisted_Triage_Data_Exploration.ipynb
+```
+
 ## Data Note
 
 The Week 0 dataset is a training dataset for emergency triage exercises. It is intentionally dirty and is used to practise inspection, cleaning, validation, and visualisation. No real patient data or credentials should be committed to this repository.
+
+The Week 5 ED triage dataset is stored locally under `data/raw/` and the cleaned version is stored under `data/processed/`. Both folders are intentionally ignored by Git because patient-level clinical datasets should not be committed to a public portfolio repo.
 
 ## Mission
 

@@ -18,6 +18,11 @@ dist/
 # Jupyter
 *.nbconvert.ipynb
 
+# Local clinical datasets and generated cleaned tables
+data/raw/
+data/processed/
+*.parquet
+
 # Environment and secrets
 .env
 .env.*

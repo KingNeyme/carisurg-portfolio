@@ -1,0 +1,11 @@
+rank,feature,correlation_with_acuity,non_missing_pct,reasoning
+1,triage_vital_sbp,0.037712766005556814,70.0413569652052,"Blood pressure is central to recognising shock, sepsis, bleeding, and other high-acuity states."
+2,triage_vital_hr,0.13721540521487707,70.37339023633061,"Heart rate rises with pain, fever, dehydration, hypoxia, arrhythmia, and physiological stress."
+3,triage_vital_rr,0.09663400200328227,69.58229108309574,"Respiratory rate is an early warning sign for respiratory failure, sepsis, metabolic disturbance, and deterioration."
+4,triage_vital_o2,-0.1883674729188135,51.59254646860047,Low oxygen saturation directly signals respiratory compromise and can justify urgent treatment.
+5,triage_vital_temp,0.012726112953017087,67.35244056051354,"Temperature helps identify infection, sepsis risk, heat illness, and other risky presentations."
+6,age,0.27674314792311494,99.99803741752693,Age changes baseline risk because older adults and very young patients can deteriorate with less obvious symptoms.
+7,arrivalmode_ambulance_or_helicopter,0.38868260797013887,100.0,Ambulance or helicopter arrival can act as a proxy for pre-hospital severity and urgency.
+8,cc_chestpain,0.15464705500686593,99.53879311882902,"Chest pain can represent myocardial infarction, pulmonary embolism, aortic dissection, or other time-sensitive diagnoses."
+9,cc_shortnessofbreath,0.13960217878728745,99.53879311882902,"Shortness of breath is tied to hypoxia, heart failure, pneumonia, asthma, COPD, and other urgent conditions."
+10,cc_alteredmentalstatus,0.12349036399386744,99.53879311882902,"Altered mental status can signal stroke, sepsis, hypoglycaemia, intoxication, trauma, or neurological emergency."
