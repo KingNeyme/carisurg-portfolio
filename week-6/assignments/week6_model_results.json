@@ -1,0 +1,384 @@
+{
+  "random_seed": 42,
+  "test_size": 0.2,
+  "split": "80/20 stratified by ESI triage level",
+  "tree_max_depth": 5,
+  "tree_max_depth_justification": "Depth 5 keeps the first baseline interpretable and reduces overfitting while allowing clinically meaningful branching across vitals, arrival mode, age, and chief complaints.",
+  "rows_after_target_filter": 558029,
+  "train_rows": 446423,
+  "test_rows": 111606,
+  "features": [
+    "age",
+    "n_edvisits",
+    "n_admissions",
+    "triage_vital_hr",
+    "triage_vital_sbp",
+    "triage_vital_dbp",
+    "triage_vital_rr",
+    "triage_vital_o2",
+    "triage_vital_temp",
+    "arrivalmode_ambulance_or_helicopter",
+    "cc_abdominalpain",
+    "cc_other",
+    "cc_chestpain",
+    "cc_shortnessofbreath",
+    "cc_backpain",
+    "cc_fall",
+    "cc_alcoholintoxication",
+    "cc_motorvehiclecrash",
+    "cc_dizziness",
+    "cc_cough",
+    "cc_emesis",
+    "cc_legpain",
+    "cc_flankpain",
+    "cc_headache-newonsetornewsymptoms",
+    "cc_alteredmentalstatus",
+    "cc_suicidal",
+    "cc_sorethroat",
+    "cc_fall>65",
+    "cc_weakness",
+    "cc_psychiatricevaluation",
+    "cc_kneepain",
+    "cc_fever-9weeksto74years",
+    "cc_rash",
+    "cc_medicalproblem",
+    "cc_nausea",
+    "cc_respiratorydistress",
+    "cc_strokealert",
+    "cc_cardiacarrest",
+    "cc_hypotension",
+    "cc_overdose-intentional",
+    "cc_seizure-newonset",
+    "cc_fulltrauma",
+    "cc_modifiedtrauma",
+    "gender",
+    "arrivalmode",
+    "arrivalmonth",
+    "arrivalday",
+    "arrivalhour_bin",
+    "previousdispo"
+  ],
+  "numeric_features": [
+    "age",
+    "n_edvisits",
+    "n_admissions",
+    "triage_vital_hr",
+    "triage_vital_sbp",
+    "triage_vital_dbp",
+    "triage_vital_rr",
+    "triage_vital_o2",
+    "triage_vital_temp",
+    "arrivalmode_ambulance_or_helicopter",
+    "cc_abdominalpain",
+    "cc_other",
+    "cc_chestpain",
+    "cc_shortnessofbreath",
+    "cc_backpain",
+    "cc_fall",
+    "cc_alcoholintoxication",
+    "cc_motorvehiclecrash",
+    "cc_dizziness",
+    "cc_cough",
+    "cc_emesis",
+    "cc_legpain",
+    "cc_flankpain",
+    "cc_headache-newonsetornewsymptoms",
+    "cc_alteredmentalstatus",
+    "cc_suicidal",
+    "cc_sorethroat",
+    "cc_fall>65",
+    "cc_weakness",
+    "cc_psychiatricevaluation",
+    "cc_kneepain",
+    "cc_fever-9weeksto74years",
+    "cc_rash",
+    "cc_medicalproblem",
+    "cc_nausea",
+    "cc_respiratorydistress",
+    "cc_strokealert",
+    "cc_cardiacarrest",
+    "cc_hypotension",
+    "cc_overdose-intentional",
+    "cc_seizure-newonset",
+    "cc_fulltrauma",
+    "cc_modifiedtrauma"
+  ],
+  "categorical_features": [
+    "gender",
+    "arrivalmode",
+    "arrivalmonth",
+    "arrivalday",
+    "arrivalhour_bin",
+    "previousdispo"
+  ],
+  "primary_metric": "Recall for ESI Level 1, supported by macro F1 as a secondary summary metric",
+  "models": {
+    "dummy_stratified": {
+      "accuracy": 0.3150547461606007,
+      "macro_f1": 0.19870373522151402,
+      "weighted_f1": 0.3150052224574791,
+      "esi_1_recall": 0.011385199240986717,
+      "esi_2_recall": 0.2907022961445562,
+      "classification_report": {
+        "1": {
+          "precision": 0.011707317073170732,
+          "recall": 0.011385199240986717,
+          "f1-score": 0.011544011544011544,
+          "support": 1054.0
+        },
+        "2": {
+          "precision": 0.2895073381645454,
+          "recall": 0.2907022961445562,
+          "f1-score": 0.2901035866298494,
+          "support": 32707.0
+        },
+        "3": {
+          "precision": 0.41959836291536784,
+          "recall": 0.4188079414130297,
+          "f1-score": 0.4192027795726831,
+          "support": 47246.0
+        },
+        "4": {
+          "precision": 0.22257691233390528,
+          "recall": 0.22311107555697773,
+          "f1-score": 0.2228436738444329,
+          "support": 25001.0
+        },
+        "5": {
+          "precision": 0.05017207027712371,
+          "recall": 0.049481957842086456,
+          "f1-score": 0.04982462451659322,
+          "support": 5598.0
+        },
+        "accuracy": 0.3150547461606007,
+        "macro avg": {
+          "precision": 0.1987124001528226,
+          "recall": 0.19869769403952736,
+          "f1-score": 0.19870373522151402,
+          "support": 111606.0
+        },
+        "weighted avg": {
+          "precision": 0.3149571609995312,
+          "recall": 0.3150547461606007,
+          "f1-score": 0.3150052224574791,
+          "support": 111606.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          298,
+          465,
+          229,
+          50
+        ],
+        [
+          307,
+          9508,
+          13952,
+          7344,
+          1596
+        ],
+        [
+          416,
+          14043,
+          19787,
+          10681,
+          2319
+        ],
+        [
+          239,
+          7304,
+          10601,
+          5578,
+          1279
+        ],
+        [
+          51,
+          1689,
+          2352,
+          1229,
+          277
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "accuracy": 0.45740372381413186,
+      "macro_f1": 0.3819327456151195,
+      "weighted_f1": 0.5027081728916646,
+      "esi_1_recall": 0.7419354838709677,
+      "esi_2_recall": 0.48014186565567,
+      "classification_report": {
+        "1": {
+          "precision": 0.05884566182557002,
+          "recall": 0.7419354838709677,
+          "f1-score": 0.10904273861814125,
+          "support": 1054.0
+        },
+        "2": {
+          "precision": 0.6291414606786587,
+          "recall": 0.48014186565567,
+          "f1-score": 0.5446348061316502,
+          "support": 32707.0
+        },
+        "3": {
+          "precision": 0.7166929191545478,
+          "recall": 0.4141091309317191,
+          "f1-score": 0.5249178348648468,
+          "support": 47246.0
+        },
+        "4": {
+          "precision": 0.5102392171076477,
+          "recall": 0.4504619815207392,
+          "f1-score": 0.4784908546300427,
+          "support": 25001.0
+        },
+        "5": {
+          "precision": 0.15576401917865332,
+          "recall": 0.6673812075741337,
+          "f1-score": 0.2525774938309164,
+          "support": 5598.0
+        },
+        "accuracy": 0.45740372381413186,
+        "macro avg": {
+          "precision": 0.41413665558901547,
+          "recall": 0.5508059339106459,
+          "f1-score": 0.3819327456151195,
+          "support": 111606.0
+        },
+        "weighted avg": {
+          "precision": 0.610439263002233,
+          "recall": 0.45740372381413186,
+          "f1-score": 0.5027081728916646,
+          "support": 111606.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          782,
+          154,
+          41,
+          34,
+          43
+        ],
+        [
+          6809,
+          15704,
+          5284,
+          2237,
+          2673
+        ],
+        [
+          4699,
+          8238,
+          19565,
+          7139,
+          7605
+        ],
+        [
+          916,
+          784,
+          2111,
+          11262,
+          9928
+        ],
+        [
+          83,
+          81,
+          298,
+          1400,
+          3736
+        ]
+      ]
+    },
+    "decision_tree": {
+      "accuracy": 0.25196674013941905,
+      "macro_f1": 0.2000216985632358,
+      "weighted_f1": 0.26312258076031486,
+      "esi_1_recall": 0.7656546489563567,
+      "esi_2_recall": 0.43376035711009875,
+      "classification_report": {
+        "1": {
+          "precision": 0.03957822461991172,
+          "recall": 0.7656546489563567,
+          "f1-score": 0.0752658086177952,
+          "support": 1054.0
+        },
+        "2": {
+          "precision": 0.47414859129039805,
+          "recall": 0.43376035711009875,
+          "f1-score": 0.45305614102318453,
+          "support": 32707.0
+        },
+        "3": {
+          "precision": 0.8273419327553394,
+          "recall": 0.16562248655970876,
+          "f1-score": 0.2759946388261851,
+          "support": 47246.0
+        },
+        "4": {
+          "precision": 0.41714285714285715,
+          "recall": 0.008759649614015439,
+          "f1-score": 0.017158975162579332,
+          "support": 25001.0
+        },
+        "5": {
+          "precision": 0.09906064858122857,
+          "recall": 0.9080028581636299,
+          "f1-score": 0.17863292918643472,
+          "support": 5598.0
+        },
+        "accuracy": 0.25196674013941905,
+        "macro avg": {
+          "precision": 0.371454450877947,
+          "recall": 0.4563600000807619,
+          "f1-score": 0.2000216985632358,
+          "support": 111606.0
+        },
+        "weighted avg": {
+          "precision": 0.5879775322225462,
+          "recall": 0.25196674013941905,
+          "f1-score": 0.26312258076031486,
+          "support": 111606.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          807,
+          144,
+          2,
+          3,
+          98
+        ],
+        [
+          10053,
+          14187,
+          1218,
+          51,
+          7198
+        ],
+        [
+          8019,
+          12303,
+          7825,
+          243,
+          18856
+        ],
+        [
+          1376,
+          2983,
+          346,
+          219,
+          20077
+        ],
+        [
+          135,
+          304,
+          67,
+          9,
+          5083
+        ]
+      ]
+    }
+  }
+}

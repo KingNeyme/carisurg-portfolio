@@ -24,6 +24,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | `week-3/` | Week 3 assignment space |
 | `week-4/` | Week 4 ethics, safety, risk, equity, and professional engagement assignments |
 | `week-5/` | Week 5 ED triage data exploration, feasibility memo, dashboard outputs, and career roadmap |
+| `week-6/` | Week 6 baseline triage modelling, evaluation report, confusion matrices, and explainer script |
 | `notebooks/` | Class-required notebook entry point with links to notebook work |
 | `docs/` | Class-required documentation entry point for Week 1 memo/proposal and bibliography |
 | `data/` | Class-required data entry point with dataset notes |
@@ -40,6 +41,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 | Week 3 | Healthcare workflows, systems thinking, constraints, stakeholders, and proposal refinement | Complete |
 | Week 4 | Ethics, safety, risk awareness, equity, harm analysis, and proposal refinement | Complete; publication steps prepared |
 | Week 5 | AI-assisted triage data exploration, profiling, dashboard, feasibility memo, and feature shortlist | Complete |
+| Week 6 | Baseline triage modelling with logistic regression, decision tree, clinical metric justification, and failure-mode reflection | Complete |
 
 ## Week 0 Completion Status
 
@@ -55,7 +57,7 @@ It is built for a clinical reviewer who needs to understand the work quickly: wh
 
 Open [`week-0/README.md`](week-0/README.md) to view the full Week 0 submission map.
 
-For the current ED triage data exploration work, open [`week-5/README.md`](week-5/README.md).
+For the current baseline modelling work, open [`week-6/README.md`](week-6/README.md).
 
 ## How To Run The Notebooks
 
@@ -77,6 +79,12 @@ For Week 5, open:
 
 ```text
 notebooks/Week5_AI_Assisted_Triage_Data_Exploration.ipynb
+```
+
+For Week 6, open:
+
+```text
+notebooks/Week6_Baseline_Triage_Model.ipynb
 ```
 
 ## Data Note

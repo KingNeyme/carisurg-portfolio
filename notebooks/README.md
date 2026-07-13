@@ -13,10 +13,12 @@ Keeping the notebooks in `week-0/assignments/` preserves the week-by-week submis
 The Week 5 full exploration notebook is stored here because the assignment specifically asks for notebooks in the `notebooks/` folder:
 
 - [`Week5_AI_Assisted_Triage_Data_Exploration.ipynb`](Week5_AI_Assisted_Triage_Data_Exploration.ipynb)
+- [`Week6_Baseline_Triage_Model.ipynb`](Week6_Baseline_Triage_Model.ipynb)
 
 A week-specific copy is also available at:
 
 - [`../week-5/assignments/Week5_AI_Assisted_Triage_Data_Exploration.ipynb`](../week-5/assignments/Week5_AI_Assisted_Triage_Data_Exploration.ipynb)
+- [`../week-6/assignments/Week6_Baseline_Triage_Model.ipynb`](../week-6/assignments/Week6_Baseline_Triage_Model.ipynb)
 
 ## How To Run
 
