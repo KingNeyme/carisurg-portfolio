@@ -11,7 +11,7 @@ The logistic regression baseline is the stronger first model because it beats th
 
 ## Modelling Setup
 
-I used the cleaned Week 5 ED triage dataset and filtered the target to valid ESI levels 1-5. The final modelling table contained **558,029 valid encounters** after excluding missing/non-valid ESI labels; the test set contained **111,606 encounters** after an **80/20 stratified train-test split**.
+I used the cleaned Week 5 ED triage dataset and filtered the target to valid ESI levels 1-5. The final modelling table contained **558,029 valid encounters** after excluding missing/non-valid ESI labels; the test set contained **111,606 encounters** after an **80/20 stratified train-test split**. The full valid modelling table contained **5,271 ESI Level 1 cases**; the **1,054 ESI Level 1 cases** reported below are the held-out test-set support after the stratified split, not the total dataset count.
 
 The feature set was intentionally conservative. I used early triage information: age, previous ED visits/admissions, triage vital signs, arrival mode, time context, previous disposition, and selected chief complaint indicators. I did not use race/ethnicity or downstream laboratory/imaging fields in this first baseline because the aim is to estimate what a model could do with information available around triage, not information collected later in the patient journey.
 
@@ -31,7 +31,7 @@ I bounded the decision tree at depth 5 because this is a first clinical baseline
 | Logistic regression | 0.457 | 0.382 | 0.503 | 0.742 | 0.480 |
 | Decision tree | 0.252 | 0.200 | 0.263 | 0.766 | 0.434 |
 
-The logistic regression model is the most balanced baseline. It correctly identified **782 of 1,054 actual ESI 1 cases** in the test set, giving an ESI 1 recall of **74.2%**. The decision tree had slightly higher ESI 1 recall at **76.6%**, but its overall accuracy and weighted F1 were much worse. In plain terms, the tree was more aggressive about calling cases urgent, but it also confused many lower-acuity patients.
+The logistic regression model is the most balanced baseline. It correctly identified **782 of 1,054 actual ESI 1 cases** in the held-out test set, giving an ESI 1 recall of **74.2%**. The decision tree had slightly higher ESI 1 recall at **76.6%**, but its overall accuracy and weighted F1 were much worse. In plain terms, the tree was more aggressive about calling cases urgent, but it also confused many lower-acuity patients.
 
 Supporting outputs:
 
